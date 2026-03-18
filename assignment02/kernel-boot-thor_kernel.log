@@ -1,0 +1,525 @@
+Mar 18 14:42:20 iaschneilfs kernel: Linux version 7.0.0-thor_kerneliaschnei-g2d1373e4246d-dirty (root@iaschneilfs) (gcc (GCC) 15.2.0, GNU ld (GNU Binutils) 2.46.0.20260210) #2 SMP PREEMPT_DYNAMIC Wed Mar 18 12:22:48 CET 2026
+Mar 18 14:42:20 iaschneilfs kernel: Command line: BOOT_IMAGE=/vmlinuz-7.0.0-thor_kerneliaschnei-g2d1373e4246d-dirty root=/dev/sda6 ro
+Mar 18 14:42:20 iaschneilfs kernel: [Firmware Bug]: TSC doesn't count with P0 frequency!
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-provided physical RAM map:
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff]  System RAM
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff]  device reserved
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [gap 0x00000000000a0000-0x00000000000effff]
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff]  device reserved
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff]  System RAM
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff]  ACPI data
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [gap 0x00000000e0000000-0x00000000febfffff]
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff]  device reserved
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [gap 0x00000000fec01000-0x00000000fedfffff]
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff]  device reserved
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [gap 0x00000000fee01000-0x00000000fffbffff]
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff]  device reserved
+Mar 18 14:42:20 iaschneilfs kernel: BIOS-e820: [mem 0x0000000100000000-0x000000021fffffff]  System RAM
+Mar 18 14:42:20 iaschneilfs kernel: NX (Execute Disable) protection: active
+Mar 18 14:42:20 iaschneilfs kernel: APIC: Static calls initialized
+Mar 18 14:42:20 iaschneilfs kernel: SMBIOS 2.5 present.
+Mar 18 14:42:20 iaschneilfs kernel: DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Mar 18 14:42:20 iaschneilfs kernel: DMI: Memory slots populated: 0/0
+Mar 18 14:42:20 iaschneilfs kernel: Hypervisor detected: KVM
+Mar 18 14:42:20 iaschneilfs kernel: last_pfn = 0xe0000 max_arch_pfn = 0x400000000
+Mar 18 14:42:20 iaschneilfs kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Mar 18 14:42:20 iaschneilfs kernel: kvm-clock: using sched offset of 8062619295397 cycles
+Mar 18 14:42:20 iaschneilfs kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Mar 18 14:42:20 iaschneilfs kernel: tsc: Detected 3693.104 MHz processor
+Mar 18 14:42:20 iaschneilfs kernel: e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+Mar 18 14:42:20 iaschneilfs kernel: e820: remove [mem 0x000a0000-0x000fffff] System RAM
+Mar 18 14:42:20 iaschneilfs kernel: last_pfn = 0x220000 max_arch_pfn = 0x400000000
+Mar 18 14:42:20 iaschneilfs kernel: MTRR map: 3 entries (3 fixed + 0 variable; max 19), built from 8 variable MTRRs
+Mar 18 14:42:20 iaschneilfs kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Mar 18 14:42:20 iaschneilfs kernel: CPU MTRRs all blank - virtualized system.
+Mar 18 14:42:20 iaschneilfs kernel: last_pfn = 0xe0000 max_arch_pfn = 0x400000000
+Mar 18 14:42:20 iaschneilfs kernel: found SMP MP-table at [mem 0x0009fbf0-0x0009fbff]
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Early table checksum verification disabled
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: XSDT 0x00000000DFFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: FACP 0x00000000DFFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: DSDT 0x00000000DFFF0630 002353 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: FACS 0x00000000DFFF0200 000040
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: FACS 0x00000000DFFF0200 000040
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: APIC 0x00000000DFFF0240 000074 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: SSDT 0x00000000DFFF02C0 00036C (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Reserving FACP table memory at [mem 0xdfff00f0-0xdfff01e3]
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Reserving DSDT table memory at [mem 0xdfff0630-0xdfff2982]
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Reserving APIC table memory at [mem 0xdfff0240-0xdfff02b3]
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Reserving SSDT table memory at [mem 0xdfff02c0-0xdfff062b]
+Mar 18 14:42:20 iaschneilfs kernel: No NUMA configuration found
+Mar 18 14:42:20 iaschneilfs kernel: Faking a node at [mem 0x0000000000000000-0x000000021fffffff]
+Mar 18 14:42:20 iaschneilfs kernel: NODE_DATA(0) allocated [mem 0x21fff8900-0x21fffbfff]
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: PM-Timer IO Port: 0x4008
+Mar 18 14:42:20 iaschneilfs kernel: IOAPIC[0]: apic_id 5, version 32, address 0xfec00000, GSI 0-23
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Mar 18 14:42:20 iaschneilfs kernel: CPU topo: Max. logical packages:   1
+Mar 18 14:42:20 iaschneilfs kernel: CPU topo: Max. logical nodes:      1
+Mar 18 14:42:20 iaschneilfs kernel: CPU topo: Num. nodes per package:  1
+Mar 18 14:42:20 iaschneilfs kernel: CPU topo: Max. logical dies:       1
+Mar 18 14:42:20 iaschneilfs kernel: CPU topo: Max. dies per package:   1
+Mar 18 14:42:20 iaschneilfs kernel: CPU topo: Max. threads per core:   1
+Mar 18 14:42:20 iaschneilfs kernel: CPU topo: Num. cores per package:     5
+Mar 18 14:42:20 iaschneilfs kernel: CPU topo: Num. threads per package:   5
+Mar 18 14:42:20 iaschneilfs kernel: CPU topo: Allowing 5 present CPUs plus 0 hotplug CPUs
+Mar 18 14:42:20 iaschneilfs kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Mar 18 14:42:20 iaschneilfs kernel: PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+Mar 18 14:42:20 iaschneilfs kernel: PM: hibernation: Registered nosave memory: [mem 0xdfff0000-0xffffffff]
+Mar 18 14:42:20 iaschneilfs kernel: [gap 0xe0000000-0xfebfffff] available for PCI devices
+Mar 18 14:42:20 iaschneilfs kernel: Booting paravirtualized kernel on KVM
+Mar 18 14:42:20 iaschneilfs kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Mar 18 14:42:20 iaschneilfs kernel: Zone ranges:
+Mar 18 14:42:20 iaschneilfs kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Mar 18 14:42:20 iaschneilfs kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Mar 18 14:42:20 iaschneilfs kernel:   Normal   [mem 0x0000000100000000-0x000000021fffffff]
+Mar 18 14:42:20 iaschneilfs kernel: Movable zone start for each node
+Mar 18 14:42:20 iaschneilfs kernel: Early memory node ranges
+Mar 18 14:42:20 iaschneilfs kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Mar 18 14:42:20 iaschneilfs kernel:   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+Mar 18 14:42:20 iaschneilfs kernel:   node   0: [mem 0x0000000100000000-0x000000021fffffff]
+Mar 18 14:42:20 iaschneilfs kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000021fffffff]
+Mar 18 14:42:20 iaschneilfs kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Mar 18 14:42:20 iaschneilfs kernel: On node 0, zone DMA: 97 pages in unavailable ranges
+Mar 18 14:42:20 iaschneilfs kernel: On node 0, zone Normal: 16 pages in unavailable ranges
+Mar 18 14:42:20 iaschneilfs kernel: setup_percpu: NR_CPUS:64 nr_cpumask_bits:5 nr_cpu_ids:5 nr_node_ids:1
+Mar 18 14:42:20 iaschneilfs kernel: percpu: Embedded 52 pages/cpu s175832 r8192 d28968 u1048576
+Mar 18 14:42:20 iaschneilfs kernel: pcpu-alloc: s175832 r8192 d28968 u1048576 alloc=1*2097152
+Mar 18 14:42:20 iaschneilfs kernel: pcpu-alloc: [0] 0 1 [0] 2 3 [0] 4 - 
+Mar 18 14:42:20 iaschneilfs kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-7.0.0-thor_kerneliaschnei-g2d1373e4246d-dirty root=/dev/sda6 ro
+Mar 18 14:42:20 iaschneilfs kernel: random: crng init done
+Mar 18 14:42:20 iaschneilfs kernel: printk: log buffer data + meta data: 262144 + 917504 = 1179648 bytes
+Mar 18 14:42:20 iaschneilfs kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: software IO TLB: area num 8.
+Mar 18 14:42:20 iaschneilfs kernel: Fallback order for Node 0: 0 
+Mar 18 14:42:20 iaschneilfs kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2097038
+Mar 18 14:42:20 iaschneilfs kernel: Policy zone: Normal
+Mar 18 14:42:20 iaschneilfs kernel: mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Mar 18 14:42:20 iaschneilfs kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=5, Nodes=1
+Mar 18 14:42:20 iaschneilfs kernel: Dynamic Preempt: full
+Mar 18 14:42:20 iaschneilfs kernel: rcu: Preemptible hierarchical RCU implementation.
+Mar 18 14:42:20 iaschneilfs kernel: rcu:         RCU event tracing is enabled.
+Mar 18 14:42:20 iaschneilfs kernel: rcu:         RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=5.
+Mar 18 14:42:20 iaschneilfs kernel:         Trampoline variant of Tasks RCU enabled.
+Mar 18 14:42:20 iaschneilfs kernel:         Tracing variant of Tasks RCU enabled.
+Mar 18 14:42:20 iaschneilfs kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Mar 18 14:42:20 iaschneilfs kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=5
+Mar 18 14:42:20 iaschneilfs kernel: RCU Tasks: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=5.
+Mar 18 14:42:20 iaschneilfs kernel: NR_IRQS: 4352, nr_irqs: 464, preallocated irqs: 16
+Mar 18 14:42:20 iaschneilfs kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Mar 18 14:42:20 iaschneilfs kernel: Console: colour VGA+ 80x25
+Mar 18 14:42:20 iaschneilfs kernel: printk: legacy console [tty0] enabled
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Core revision 20251212
+Mar 18 14:42:20 iaschneilfs kernel: APIC: Switch to symmetric I/O mode setup
+Mar 18 14:42:20 iaschneilfs kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Mar 18 14:42:20 iaschneilfs kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x6a77c752a1a, max_idle_ns: 881590993566 ns
+Mar 18 14:42:20 iaschneilfs kernel: Calibrating delay loop (skipped) preset value.. 7386.20 BogoMIPS (lpj=3693104)
+Mar 18 14:42:20 iaschneilfs kernel: Last level iTLB entries: 4KB 512, 2MB 512, 4MB 256
+Mar 18 14:42:20 iaschneilfs kernel: Last level dTLB entries: 4KB 2048, 2MB 2048, 4MB 1024, 1GB 0
+Mar 18 14:42:20 iaschneilfs kernel: mitigations: Enabled attack vectors: user_kernel, user_user, SMT mitigations: auto
+Mar 18 14:42:20 iaschneilfs kernel: Speculative Return Stack Overflow: IBPB-extending microcode not applied!
+Mar 18 14:42:20 iaschneilfs kernel: Speculative Return Stack Overflow: WARNING: See https://kernel.org/doc/html/latest/admin-guide/hw-vuln/srso.html for mitigation options.
+Mar 18 14:42:20 iaschneilfs kernel: Transient Scheduler Attacks: Vulnerable: No microcode
+Mar 18 14:42:20 iaschneilfs kernel: Spectre V2 : Mitigation: Retpolines
+Mar 18 14:42:20 iaschneilfs kernel: Speculative Return Stack Overflow: Vulnerable: Safe RET, no microcode
+Mar 18 14:42:20 iaschneilfs kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Mar 18 14:42:20 iaschneilfs kernel: Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+Mar 18 14:42:20 iaschneilfs kernel: active return thunk: srso_alias_return_thunk
+Mar 18 14:42:20 iaschneilfs kernel: x86/fpu: x87 FPU will use FXSAVE
+Mar 18 14:42:20 iaschneilfs kernel: Freeing SMP alternatives memory: 56K
+Mar 18 14:42:20 iaschneilfs kernel: pid_max: default: 32768 minimum: 301
+Mar 18 14:42:20 iaschneilfs kernel: SELinux:  Initializing.
+Mar 18 14:42:20 iaschneilfs kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: VFS: Finished mounting rootfs on nullfs
+Mar 18 14:42:20 iaschneilfs kernel: APIC calibration not consistent with PM-Timer: 102ms instead of 100ms
+Mar 18 14:42:20 iaschneilfs kernel: APIC delta adjusted to PM-Timer: 6255362 (6388559)
+Mar 18 14:42:20 iaschneilfs kernel: smpboot: CPU0: AMD Ryzen 5 5600X 6-Core Processor (family: 0x19, model: 0x21, stepping: 0x2)
+Mar 18 14:42:20 iaschneilfs kernel: Performance Events: PMU not available due to virtualization, using software events only.
+Mar 18 14:42:20 iaschneilfs kernel: signal: max sigframe size: 1440
+Mar 18 14:42:20 iaschneilfs kernel: rcu: Hierarchical SRCU implementation.
+Mar 18 14:42:20 iaschneilfs kernel: rcu:         Max phase no-delay instances is 400.
+Mar 18 14:42:20 iaschneilfs kernel: Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+Mar 18 14:42:20 iaschneilfs kernel: smp: Bringing up secondary CPUs ...
+Mar 18 14:42:20 iaschneilfs kernel: smpboot: x86: Booting SMP configuration:
+Mar 18 14:42:20 iaschneilfs kernel: .... node  #0, CPUs:      #1 #2 #3 #4
+Mar 18 14:42:20 iaschneilfs kernel: TSC synchronization [CPU#0 -> CPU#1]:
+Mar 18 14:42:20 iaschneilfs kernel: Measured 106359 cycles TSC warp between CPUs, turning off TSC clock.
+Mar 18 14:42:20 iaschneilfs kernel: tsc: Marking TSC unstable due to check_tsc_sync_source failed
+Mar 18 14:42:20 iaschneilfs kernel: smp: Brought up 1 node, 5 CPUs
+Mar 18 14:42:20 iaschneilfs kernel: smpboot: Total of 5 processors activated (36931.04 BogoMIPS)
+Mar 18 14:42:20 iaschneilfs kernel: Memory: 8130448K/8388152K available (19635K kernel code, 3018K rwdata, 7808K rodata, 2884K init, 612K bss, 252532K reserved, 0K cma-reserved)
+Mar 18 14:42:20 iaschneilfs kernel: devtmpfs: initialized
+Mar 18 14:42:20 iaschneilfs kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Mar 18 14:42:20 iaschneilfs kernel: posixtimers hash table entries: 4096 (order: 4, 65536 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: futex hash table entries: 2048 (131072 bytes on 1 NUMA nodes, total 128 KiB, linear).
+Mar 18 14:42:20 iaschneilfs kernel: PM: RTC time: 11:27:58, date: 2026-03-18
+Mar 18 14:42:20 iaschneilfs kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Mar 18 14:42:20 iaschneilfs kernel: audit: initializing netlink subsys (disabled)
+Mar 18 14:42:20 iaschneilfs kernel: audit: type=2000 audit(1773841335.803:1): state=initialized audit_enabled=0 res=1
+Mar 18 14:42:20 iaschneilfs kernel: thermal_sys: Registered thermal governor 'step_wise'
+Mar 18 14:42:20 iaschneilfs kernel: cpuidle: using governor menu
+Mar 18 14:42:20 iaschneilfs kernel: PCI: Using configuration type 1 for base access
+Mar 18 14:42:20 iaschneilfs kernel: PCI: Using configuration type 1 for extended access
+Mar 18 14:42:20 iaschneilfs kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Mar 18 14:42:20 iaschneilfs kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Mar 18 14:42:20 iaschneilfs kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Added _OSI(Module Device)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Added _OSI(Processor Device)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: 2 ACPI AML tables successfully acquired and loaded
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: \_SB_: platform _OSC: OS support mask [002a7eee]
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Interpreter enabled
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: PM: (supports S0 S5)
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Using IOAPIC for interrupt routing
+Mar 18 14:42:20 iaschneilfs kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Mar 18 14:42:20 iaschneilfs kernel: PCI: Using E820 reservations for host bridge windows
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: Enabled 2 GPEs in block 00 to 07
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Mar 18 14:42:20 iaschneilfs kernel: acpi PNP0A03:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+Mar 18 14:42:20 iaschneilfs kernel: acpi PNP0A03:00: _OSC: platform does not support [PCIeCapability LTR]
+Mar 18 14:42:20 iaschneilfs kernel: acpi PNP0A03:00: _OSC: not requesting control; platform does not support [PCIeCapability]
+Mar 18 14:42:20 iaschneilfs kernel: acpi PNP0A03:00: _OSC: OS requested [PME PCIeCapability LTR]
+Mar 18 14:42:20 iaschneilfs kernel: acpi PNP0A03:00: _OSC: platform willing to grant [PME]
+Mar 18 14:42:20 iaschneilfs kernel: acpi PNP0A03:00: _OSC: platform retains control of PCIe features (AE_SUPPORT)
+Mar 18 14:42:20 iaschneilfs kernel: PCI host bridge to bus 0000:00
+Mar 18 14:42:20 iaschneilfs kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Mar 18 14:42:20 iaschneilfs kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Mar 18 14:42:20 iaschneilfs kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Mar 18 14:42:20 iaschneilfs kernel: pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+Mar 18 14:42:20 iaschneilfs kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100 conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:01.1: BAR 4 [io  0xd000-0xd00f]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:02.0: [15ad:0405] type 00 class 0x030000 conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:02.0: BAR 0 [io  0xd010-0xd01f]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:02.0: BAR 1 [mem 0xe0000000-0xe0ffffff pref]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:02.0: BAR 2 [mem 0xf0000000-0xf01fffff]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:03.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:03.0: BAR 0 [mem 0xf0200000-0xf021ffff]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:03.0: BAR 2 [io  0xd020-0xd027]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000 conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:04.0: BAR 0 [io  0xd040-0xd05f]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:04.0: BAR 1 [mem 0xf0400000-0xf07fffff]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:04.0: BAR 2 [mem 0xf0800000-0xf0803fff pref]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:05.0: [8086:2415] type 00 class 0x040100 conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:05.0: BAR 0 [io  0xd100-0xd1ff]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:05.0: BAR 1 [io  0xd200-0xd23f]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310 conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:06.0: BAR 0 [mem 0xf0804000-0xf0804fff]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:07.0: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:0b.0: [8086:265c] type 00 class 0x0c0320 conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:0b.0: BAR 0 [mem 0xf0805000-0xf0805fff]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601 conventional PCI endpoint
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:0d.0: BAR 0 [io  0xd240-0xd247]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:0d.0: BAR 1 [io  0xd248-0xd24b]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:0d.0: BAR 2 [io  0xd250-0xd257]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:0d.0: BAR 3 [io  0xd258-0xd25b]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:0d.0: BAR 4 [io  0xd260-0xd26f]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:0d.0: BAR 5 [mem 0xf0806000-0xf0807fff]
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 11
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 9
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Mar 18 14:42:20 iaschneilfs kernel: iommu: Default domain type: Translated
+Mar 18 14:42:20 iaschneilfs kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Mar 18 14:42:20 iaschneilfs kernel: SCSI subsystem initialized
+Mar 18 14:42:20 iaschneilfs kernel: libata version 3.00 loaded.
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: bus type USB registered
+Mar 18 14:42:20 iaschneilfs kernel: usbcore: registered new interface driver usbfs
+Mar 18 14:42:20 iaschneilfs kernel: usbcore: registered new interface driver hub
+Mar 18 14:42:20 iaschneilfs kernel: usbcore: registered new device driver usb
+Mar 18 14:42:20 iaschneilfs kernel: pps_core: LinuxPPS API ver. 1 registered
+Mar 18 14:42:20 iaschneilfs kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Mar 18 14:42:20 iaschneilfs kernel: PTP clock support registered
+Mar 18 14:42:20 iaschneilfs kernel: Advanced Linux Sound Architecture Driver Initialized.
+Mar 18 14:42:20 iaschneilfs kernel: NetLabel: Initializing
+Mar 18 14:42:20 iaschneilfs kernel: NetLabel:  domain hash size = 128
+Mar 18 14:42:20 iaschneilfs kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Mar 18 14:42:20 iaschneilfs kernel: NetLabel:  unlabeled traffic allowed by default
+Mar 18 14:42:20 iaschneilfs kernel: PCI: Using ACPI for IRQ routing
+Mar 18 14:42:20 iaschneilfs kernel: PCI: pci_cache_line_size set to 64 bytes
+Mar 18 14:42:20 iaschneilfs kernel: e820: register RAM buffer resource [mem 0x0009fc00-0x0009ffff]
+Mar 18 14:42:20 iaschneilfs kernel: e820: register RAM buffer resource [mem 0xdfff0000-0xdfffffff]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Mar 18 14:42:20 iaschneilfs kernel: vgaarb: loaded
+Mar 18 14:42:20 iaschneilfs kernel: clocksource: Switched to clocksource kvm-clock
+Mar 18 14:42:20 iaschneilfs kernel: VFS: Disk quotas dquot_6.6.0
+Mar 18 14:42:20 iaschneilfs kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Mar 18 14:42:20 iaschneilfs kernel: pnp: PnP ACPI init
+Mar 18 14:42:20 iaschneilfs kernel: pnp: PnP ACPI: found 2 devices
+Mar 18 14:42:20 iaschneilfs kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Mar 18 14:42:20 iaschneilfs kernel: NET: Registered PF_INET protocol family
+Mar 18 14:42:20 iaschneilfs kernel: IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: TCP: Hash tables configured (established 65536 bind 65536)
+Mar 18 14:42:20 iaschneilfs kernel: UDP hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: UDP-Lite hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Mar 18 14:42:20 iaschneilfs kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Mar 18 14:42:20 iaschneilfs kernel: RPC: Registered named UNIX socket transport module.
+Mar 18 14:42:20 iaschneilfs kernel: RPC: Registered udp transport module.
+Mar 18 14:42:20 iaschneilfs kernel: RPC: Registered tcp transport module.
+Mar 18 14:42:20 iaschneilfs kernel: RPC: Registered tcp-with-tls transport module.
+Mar 18 14:42:20 iaschneilfs kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Mar 18 14:42:20 iaschneilfs kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Mar 18 14:42:20 iaschneilfs kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Mar 18 14:42:20 iaschneilfs kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Mar 18 14:42:20 iaschneilfs kernel: pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfdffffff window]
+Mar 18 14:42:20 iaschneilfs kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Mar 18 14:42:20 iaschneilfs kernel: PCI: CLS 0 bytes, default 64
+Mar 18 14:42:20 iaschneilfs kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Mar 18 14:42:20 iaschneilfs kernel: software IO TLB: mapped [mem 0x00000000dbff0000-0x00000000dfff0000] (64MB)
+Mar 18 14:42:20 iaschneilfs kernel: platform rtc_cmos: registered platform RTC device (no PNP device found)
+Mar 18 14:42:20 iaschneilfs kernel: Initialise system trusted keyrings
+Mar 18 14:42:20 iaschneilfs kernel: workingset: timestamp_bits=40 max_order=21 bucket_order=0
+Mar 18 14:42:20 iaschneilfs kernel: NFS: Registering the id_resolver key type
+Mar 18 14:42:20 iaschneilfs kernel: Key type id_resolver registered
+Mar 18 14:42:20 iaschneilfs kernel: Key type id_legacy registered
+Mar 18 14:42:20 iaschneilfs kernel: nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+Mar 18 14:42:20 iaschneilfs kernel: nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+Mar 18 14:42:20 iaschneilfs kernel: 9p: Installing v9fs 9p2000 file system support
+Mar 18 14:42:20 iaschneilfs kernel: Key type asymmetric registered
+Mar 18 14:42:20 iaschneilfs kernel: Asymmetric key parser 'x509' registered
+Mar 18 14:42:20 iaschneilfs kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+Mar 18 14:42:20 iaschneilfs kernel: io scheduler mq-deadline registered
+Mar 18 14:42:20 iaschneilfs kernel: io scheduler kyber registered
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: AC: AC Adapter [AC] (on-line)
+Mar 18 14:42:20 iaschneilfs kernel: input: Power Button as /devices/platform/LNXPWRBN:00/input/input0
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: button: Power Button [PWRF]
+Mar 18 14:42:20 iaschneilfs kernel: input: Sleep Button as /devices/platform/LNXSLPBN:00/input/input1
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: button: Sleep Button [SLPF]
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Mar 18 14:42:20 iaschneilfs kernel: input: Video Bus as /devices/pci0000:00/acpi.video_bus.0/input/input2
+Mar 18 14:42:20 iaschneilfs kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Mar 18 14:42:20 iaschneilfs kernel: Non-volatile memory driver v1.3
+Mar 18 14:42:20 iaschneilfs kernel: Linux agpgart interface v0.103
+Mar 18 14:42:20 iaschneilfs kernel: ACPI: bus type drm_connector registered
+Mar 18 14:42:20 iaschneilfs kernel: loop: module loaded
+Mar 18 14:42:20 iaschneilfs kernel: ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+Mar 18 14:42:20 iaschneilfs kernel: ahci 0000:00:0d.0: AHCI vers 0001.0100, 32 command slots, 3 Gbps, SATA mode
+Mar 18 14:42:20 iaschneilfs kernel: ahci 0000:00:0d.0: 1/1 ports implemented (port mask 0x1)
+Mar 18 14:42:20 iaschneilfs kernel: ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+Mar 18 14:42:20 iaschneilfs kernel: scsi host0: ahci
+Mar 18 14:42:20 iaschneilfs kernel: ata1: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21 lpm-pol 1
+Mar 18 14:42:20 iaschneilfs kernel: scsi host1: ata_piix
+Mar 18 14:42:20 iaschneilfs kernel: scsi host2: ata_piix
+Mar 18 14:42:20 iaschneilfs kernel: ata2: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14 lpm-pol 0
+Mar 18 14:42:20 iaschneilfs kernel: ata3: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15 lpm-pol 0
+Mar 18 14:42:20 iaschneilfs kernel: e100: Intel(R) PRO/100 Network Driver
+Mar 18 14:42:20 iaschneilfs kernel: e100: Copyright(c) 1999-2006 Intel Corporation
+Mar 18 14:42:20 iaschneilfs kernel: e1000: Intel(R) PRO/1000 Network Driver
+Mar 18 14:42:20 iaschneilfs kernel: e1000: Copyright (c) 1999-2006 Intel Corporation.
+Mar 18 14:42:20 iaschneilfs kernel: ata3.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+Mar 18 14:42:20 iaschneilfs kernel: ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+Mar 18 14:42:20 iaschneilfs kernel: ata1.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+Mar 18 14:42:20 iaschneilfs kernel: ata1.00: 134217728 sectors, multi 128: LBA48 NCQ (depth 32)
+Mar 18 14:42:20 iaschneilfs kernel: ata1.00: configured for UDMA/133
+Mar 18 14:42:20 iaschneilfs kernel: scsi 0:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+Mar 18 14:42:20 iaschneilfs kernel: scsi 0:0:0:0: Attached scsi generic sg0 type 0
+Mar 18 14:42:20 iaschneilfs kernel: sd 0:0:0:0: [sda] 134217728 512-byte logical blocks: (68.7 GB/64.0 GiB)
+Mar 18 14:42:20 iaschneilfs kernel: scsi 2:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+Mar 18 14:42:20 iaschneilfs kernel: sd 0:0:0:0: [sda] Write Protect is off
+Mar 18 14:42:20 iaschneilfs kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Mar 18 14:42:20 iaschneilfs kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Mar 18 14:42:20 iaschneilfs kernel: sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+Mar 18 14:42:20 iaschneilfs kernel: sr 2:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+Mar 18 14:42:20 iaschneilfs kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+Mar 18 14:42:20 iaschneilfs kernel:  sda: sda1 sda4 sda5 sda6 sda7
+Mar 18 14:42:20 iaschneilfs kernel: sr 2:0:0:0: Attached scsi CD-ROM sr0
+Mar 18 14:42:20 iaschneilfs kernel: sr 2:0:0:0: Attached scsi generic sg1 type 5
+Mar 18 14:42:20 iaschneilfs kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+Mar 18 14:42:20 iaschneilfs kernel: e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:18:13:5f
+Mar 18 14:42:20 iaschneilfs kernel: e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+Mar 18 14:42:20 iaschneilfs kernel: e1000e: Intel(R) PRO/1000 Network Driver
+Mar 18 14:42:20 iaschneilfs kernel: e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Mar 18 14:42:20 iaschneilfs kernel: sky2: driver version 1.30
+Mar 18 14:42:20 iaschneilfs kernel: ohci-pci 0000:00:06.0: OHCI PCI host controller
+Mar 18 14:42:20 iaschneilfs kernel: ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+Mar 18 14:42:20 iaschneilfs kernel: ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+Mar 18 14:42:20 iaschneilfs kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 7.00
+Mar 18 14:42:20 iaschneilfs kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Mar 18 14:42:20 iaschneilfs kernel: usb usb1: Product: OHCI PCI host controller
+Mar 18 14:42:20 iaschneilfs kernel: usb usb1: Manufacturer: Linux 7.0.0-thor_kerneliaschnei-g2d1373e4246d-dirty ohci_hcd
+Mar 18 14:42:20 iaschneilfs kernel: usb usb1: SerialNumber: 0000:00:06.0
+Mar 18 14:42:20 iaschneilfs kernel: hub 1-0:1.0: USB hub found
+Mar 18 14:42:20 iaschneilfs kernel: hub 1-0:1.0: 12 ports detected
+Mar 18 14:42:20 iaschneilfs kernel: ehci-pci 0000:00:0b.0: EHCI Host Controller
+Mar 18 14:42:20 iaschneilfs kernel: usbcore: registered new interface driver usblp
+Mar 18 14:42:20 iaschneilfs kernel: ehci-pci 0000:00:0b.0: new USB bus registered, assigned bus number 2
+Mar 18 14:42:20 iaschneilfs kernel: usbcore: registered new interface driver usb-storage
+Mar 18 14:42:20 iaschneilfs kernel: ehci-pci 0000:00:0b.0: irq 19, io mem 0xf0805000
+Mar 18 14:42:20 iaschneilfs kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+Mar 18 14:42:20 iaschneilfs kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Mar 18 14:42:20 iaschneilfs kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Mar 18 14:42:20 iaschneilfs kernel: mousedev: PS/2 mouse device common for all mice
+Mar 18 14:42:20 iaschneilfs kernel: ehci-pci 0000:00:0b.0: USB 2.0 started, EHCI 1.00
+Mar 18 14:42:20 iaschneilfs kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.00
+Mar 18 14:42:20 iaschneilfs kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+Mar 18 14:42:20 iaschneilfs kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Mar 18 14:42:20 iaschneilfs kernel: rtc_cmos rtc_cmos: registered as rtc0
+Mar 18 14:42:20 iaschneilfs kernel: rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+Mar 18 14:42:20 iaschneilfs kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+Mar 18 14:42:20 iaschneilfs kernel: amd_pstate: the _CPC object is not present in SBIOS or ACPI disabled
+Mar 18 14:42:20 iaschneilfs kernel: hid: raw HID events driver (C) Jiri Kosina
+Mar 18 14:42:20 iaschneilfs kernel: usbcore: registered new interface driver usbhid
+Mar 18 14:42:20 iaschneilfs kernel: usbhid: USB HID core driver
+Mar 18 14:42:20 iaschneilfs kernel: Initializing XFRM netlink socket
+Mar 18 14:42:20 iaschneilfs kernel: usb usb2: Product: EHCI Host Controller
+Mar 18 14:42:20 iaschneilfs kernel: NET: Registered PF_INET6 protocol family
+Mar 18 14:42:20 iaschneilfs kernel: Segment Routing with IPv6
+Mar 18 14:42:20 iaschneilfs kernel: usb usb2: Manufacturer: Linux 7.0.0-thor_kerneliaschnei-g2d1373e4246d-dirty ehci_hcd
+Mar 18 14:42:20 iaschneilfs kernel: In-situ OAM (IOAM) with IPv6
+Mar 18 14:42:20 iaschneilfs kernel: usb usb2: SerialNumber: 0000:00:0b.0
+Mar 18 14:42:20 iaschneilfs kernel: sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+Mar 18 14:42:20 iaschneilfs kernel: hub 2-0:1.0: USB hub found
+Mar 18 14:42:20 iaschneilfs kernel: NET: Registered PF_PACKET protocol family
+Mar 18 14:42:20 iaschneilfs kernel: hub 2-0:1.0: 12 ports detected
+Mar 18 14:42:20 iaschneilfs kernel: 9pnet: Installing 9P2000 support
+Mar 18 14:42:20 iaschneilfs kernel: Key type dns_resolver registered
+Mar 18 14:42:20 iaschneilfs kernel: IPI shorthand broadcast: enabled
+Mar 18 14:42:20 iaschneilfs kernel: sched_clock: Marking stable (2094684401, 179256639)->(2353949064, -80008024)
+Mar 18 14:42:20 iaschneilfs kernel: registered taskstats version 1
+Mar 18 14:42:20 iaschneilfs kernel: Loading compiled-in X.509 certificates
+Mar 18 14:42:20 iaschneilfs kernel: Demotion targets for Node 0: null
+Mar 18 14:42:20 iaschneilfs kernel: PM:   Magic number: 2:426:479
+Mar 18 14:42:20 iaschneilfs kernel: netconsole: network logging started
+Mar 18 14:42:20 iaschneilfs kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Mar 18 14:42:20 iaschneilfs kernel: kworker/u20:3 (80) used greatest stack depth: 14496 bytes left
+Mar 18 14:42:20 iaschneilfs kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Mar 18 14:42:20 iaschneilfs kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+Mar 18 14:42:20 iaschneilfs kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Mar 18 14:42:20 iaschneilfs kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Mar 18 14:42:20 iaschneilfs kernel: cfg80211: failed to load regulatory.db
+Mar 18 14:42:20 iaschneilfs kernel: ALSA device list:
+Mar 18 14:42:20 iaschneilfs kernel:   No soundcards found.
+Mar 18 14:42:20 iaschneilfs kernel: md: Waiting for all devices to be available before autodetect
+Mar 18 14:42:20 iaschneilfs kernel: md: If you don't use raid, use raid=noautodetect
+Mar 18 14:42:20 iaschneilfs kernel: md: Autodetecting RAID arrays.
+Mar 18 14:42:20 iaschneilfs kernel: md: autorun ...
+Mar 18 14:42:20 iaschneilfs kernel: md: ... autorun DONE.
+Mar 18 14:42:20 iaschneilfs kernel: EXT4-fs (sda6): mounted filesystem 04c870f5-1a18-48f5-bbe7-22528490f21f ro with ordered data mode. Quota mode: none.
+Mar 18 14:42:20 iaschneilfs kernel: VFS: Mounted root (ext4 filesystem) readonly on device 8:6.
+Mar 18 14:42:20 iaschneilfs kernel: devtmpfs: mounted
+Mar 18 14:42:20 iaschneilfs kernel: VFS: Pivoted into new rootfs
+Mar 18 14:42:20 iaschneilfs kernel: Freeing unused kernel image (initmem) memory: 2884K
+Mar 18 14:42:20 iaschneilfs kernel: Write protecting the kernel read-only data: 28672k
+Mar 18 14:42:20 iaschneilfs kernel: Freeing unused kernel image (text/rodata gap) memory: 844K
+Mar 18 14:42:20 iaschneilfs kernel: Freeing unused kernel image (rodata/data gap) memory: 384K
+Mar 18 14:42:20 iaschneilfs kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Mar 18 14:42:20 iaschneilfs kernel: Run /sbin/init as init process
+Mar 18 14:42:20 iaschneilfs kernel:   with arguments:
+Mar 18 14:42:20 iaschneilfs kernel:     /sbin/init
+Mar 18 14:42:20 iaschneilfs kernel:   with environment:
+Mar 18 14:42:20 iaschneilfs kernel:     HOME=/
+Mar 18 14:42:20 iaschneilfs kernel:     TERM=linux
+Mar 18 14:42:20 iaschneilfs kernel: usb 1-1: new full-speed USB device number 2 using ohci-pci
+Mar 18 14:42:20 iaschneilfs kernel: usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Mar 18 14:42:20 iaschneilfs kernel: usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Mar 18 14:42:20 iaschneilfs kernel: usb 1-1: Product: USB Tablet
+Mar 18 14:42:20 iaschneilfs kernel: usb 1-1: Manufacturer: VirtualBox
+Mar 18 14:42:20 iaschneilfs kernel: input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input6
+Mar 18 14:42:20 iaschneilfs kernel: hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Mar 18 14:42:20 iaschneilfs systemd[1]: systemd 259.1 running in system mode (-PAM -AUDIT -SELINUX -APPARMOR +IMA +IPE +SMACK -SECCOMP -GCRYPT -GNUTLS +OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN +KMOD -LIBCRYPTSETUP -LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -BTF -XKBCOMMON +UTMP +SYSVINIT -LIBARCHIVE)
+Mar 18 14:42:20 iaschneilfs systemd[1]: Detected virtualization oracle.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Detected architecture x86-64.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Hostname set to <iaschneilfs>.
+Mar 18 14:42:20 iaschneilfs kernel: systemd-factory (89) used greatest stack depth: 12648 bytes left
+Mar 18 14:42:20 iaschneilfs systemd-sysv-generator[98]: stat() failed on /etc/init.d/init.d, ignoring: No such file or directory
+Mar 18 14:42:20 iaschneilfs kernel: systemd-fstab-g (90) used greatest stack depth: 12544 bytes left
+Mar 18 14:42:20 iaschneilfs kernel: systemd-gpt-aut (92) used greatest stack depth: 12488 bytes left
+Mar 18 14:42:20 iaschneilfs systemd[1]: Queued start job for default target Graphical Interface.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Created slice Slice /system/getty.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Created slice Slice /system/modprobe.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Created slice Slice /system/systemd-fsck.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Created slice User and Session Slice.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Expecting device /dev/sda4...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Expecting device /dev/sda5...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Expecting device /dev/sda7...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Reached target Remote File Systems.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Reached target Slice Units.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Query the User Interactively for a Password.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Process Core Dump Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Credential Encryption/Decryption.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Factory Reset Management.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Journal Audit Socket skipped, unmet condition check ConditionSecurity=audit
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Journal Socket (/dev/log).
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Journal Sockets.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on DDI File System Mounter Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Console Output Muting Service Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Network Management Resolve Hook Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Network Management Varlink Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Network Management Netlink Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Namespace Resource Manager Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Userspace Out-Of-Memory (OOM) Killer Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Disk Repartitioning Service Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Resolve Monitor Varlink Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on Resolve Service Varlink Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on udev Control Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on udev Kernel Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on udev Varlink Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Listening on User Database Manager Socket.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Mounting Huge Pages File System...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Mounting POSIX Message Queue File System...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Mounting Kernel Debug File System...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Mounting Kernel Trace File System...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Create List of Static Device Nodes skipped, unmet condition check ConditionFileNotEmpty=/lib/modules/7.0.0-thor_kerneliaschnei-g2d1373e4246d-dirty/modules.devname
+Mar 18 14:42:20 iaschneilfs systemd[1]: Starting Load Kernel Module configfs...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+Mar 18 14:42:20 iaschneilfs systemd[1]: Starting Load Kernel Module efi_pstore...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Starting Load Kernel Module fuse...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Starting File System Check on Root Device...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+Mar 18 14:42:20 iaschneilfs systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+Mar 18 14:42:20 iaschneilfs systemd[1]: systemd-journald.service: (This warning is only shown for the first unit using IP firewalling.)
+Mar 18 14:42:20 iaschneilfs systemd[1]: Starting Journal Service...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Load Kernel Modules skipped, no trigger condition checks were met.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Starting Generate Network Units from Kernel Command Line...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Starting Apply Kernel Variables...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Starting Load udev Rules from Credentials...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Starting Coldplug All udev Devices...
+Mar 18 14:42:20 iaschneilfs systemd[1]: Mounted Huge Pages File System.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Mounted POSIX Message Queue File System.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Mounted Kernel Debug File System.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Mounted Kernel Trace File System.
+Mar 18 14:42:20 iaschneilfs systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Finished Load Kernel Module configfs.
+Mar 18 14:42:20 iaschneilfs systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Finished Load Kernel Module efi_pstore.
+Mar 18 14:42:20 iaschneilfs systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Finished Load Kernel Module fuse.
+Mar 18 14:42:20 iaschneilfs systemd[1]: FUSE Control File System skipped, unmet condition check ConditionPathExists=/sys/fs/fuse/connections
+Mar 18 14:42:20 iaschneilfs systemd[1]: Kernel Configuration File System skipped, unmet condition check ConditionPathExists=/sys/kernel/config
+Mar 18 14:42:20 iaschneilfs systemd[1]: Finished Generate Network Units from Kernel Command Line.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Reached target Preparation for Network.
+Mar 18 14:42:20 iaschneilfs systemd-journald[110]: Collecting audit messages is disabled.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Finished Load udev Rules from Credentials.
+Mar 18 14:42:20 iaschneilfs systemd[1]: Started Journal Service.
+Mar 18 14:42:20 iaschneilfs kernel: EXT4-fs (sda6): re-mounted 04c870f5-1a18-48f5-bbe7-22528490f21f r/w.
+Mar 18 14:42:29 iaschneilfs systemd-journald[110]: Received client request to flush runtime journal.
+Mar 18 14:42:29 iaschneilfs kernel: e1000 0000:00:03.0 enp0s3: renamed from eth0
+Mar 18 14:42:29 iaschneilfs kernel: e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Mar 18 12:28:13 iaschneilfs systemd-journald[110]: Time jumped backwards, rotating.
+Mar 18 12:28:13 iaschneilfs kernel: Adding 4156412k swap on /dev/sda7.  Priority:1 extents:1 across:4156412k 
+Mar 18 12:28:14 iaschneilfs kernel: EXT4-fs (sda5): mounted filesystem d6844469-fe7d-4ea4-86d2-2236dce32c47 r/w with ordered data mode. Quota mode: none.
+Mar 18 12:28:14 iaschneilfs kernel: EXT4-fs (sda4): mounted filesystem cb3f3a66-8a37-4fba-9f75-dc1402f466b9 r/w with ordered data mode. Quota mode: none.
